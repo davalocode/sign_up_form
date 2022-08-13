@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+.left {
+    background-image: url(img/atracciones-alaska.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    
+}
+
+.left img { 
+    height: 100%;
+}
+
+.form {
+    margin: 0px;
+    width: 60%;
+    color: white;
+    background-color: black;
+    height: 40em;
+}
+.form h1 {
+    margin-top: 5%;
+    text-align: center;
+}
+.form p {
+    margin: 2%;
+}
+.form form {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.form form div {
+    width: 30%;
+    margin: 2%;
+    margin-right: 18%;
+}
+
+.form form div input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+.form form div label {
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
+
+.form form input[type=submit] {
+    color: rebeccapurple;
+    font-size: large;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid rebeccapurple;
+    margin: 0%;
+    font-size: small;
+    width: 50%;
+    padding: 10px;
+    transition: all 300ms;
+}
+.form form input[type=submit]:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+.log_in p{
+    display: inline-block;
+    margin-right: 5px;
+}
+.log_in a {
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rebeccapurple;
+    transition: all 300ms;
+}
+.log_in a:hover {
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:790px) {
+    .left {
+        height: 200px;
+        width: 100%;
+    }
+    .form h1 {
+        margin-top: 10%;
+    }
+    .form p {
+        margin: 5%;
+    }
+    .form {
+        width: 100%;
+    }
+    .form form div {
+        margin-top: 5%;
+        width: 100%;
+    }
+}
